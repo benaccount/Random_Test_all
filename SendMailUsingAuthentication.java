@@ -46,17 +46,17 @@ public class SendMailUsingAuthentication
 
 
   private static final String SMTP_HOST_NAME = "mail.twc.com";
-  private static final String SMTP_AUTH_USER = "ebenezer.software.tester@gmail.com";
+  private static final String SMTP_AUTH_USER = "myemail@email.com";
   private static final String SMTP_AUTH_PWD  = "password";
 
   
   private static final String emailSubjectTxt  = "Automation Testing Report on  " + new Date() + " ";
   private static final String emailMsgTxt      = "Ben send you this report";
   
-  private static final String emailFromAddress = "ebenezer.software.tester@gmail.com";
+  private static final String emailFromAddress = "myemail@email.com";
 
   // Add List of Email address to who email needs to be sent to
-  private static final String[] emailList = {"ebenezer.software.tester@gmail.com", "eoludotun@gmail.com" , "ebenezer.software.tester@gmail.com"};
+  private static final String[] emailList = {"myemail@email.com", "myemail@email_1.com" "};
 
  @Test
   public static void maineeee() throws Exception
@@ -97,8 +97,8 @@ private BodyPart messageBodyPart;
 
     // Part two is attachment
     messageBodyPart = new MimeBodyPart();
-   // String filename = "C:\\Documents and Settings\\Administrator\\My Documents\\images.jpg";
-    String filename = "C:\\TroyIntelliMark  Project\\TroyIntelliMark2\\test-output\\emailable-report.html";
+  
+    String filename = "C:\\location";
   
     DataSource source = new FileDataSource(filename);
     messageBodyPart.setDataHandler(new DataHandler(source));
