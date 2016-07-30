@@ -14,10 +14,10 @@ public class SendEmail
    public static void main(String [] args)
    {    
       // Recipient's email ID needs to be mentioned.
-      String to = "icymadhu@gmail.com";
+      String to = "someemail.com";
 
       // Sender's email ID needs to be mentioned
-      String from = "madhuri1810p@gmail.com";
+      String from = "otheremail.com";
 
       // Assuming you are sending email from localhost
       String host = "localhost";
